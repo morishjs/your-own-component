@@ -9,7 +9,7 @@ const StyledBox = styled.div`
   ${flexbox}
 `;
 
-type BoxProps = SpaceProps & LayoutProps & ColorProps & FlexboxProps;
+export type BoxProps = SpaceProps & LayoutProps & ColorProps & FlexboxProps;
 
 const Box: FCC<BoxProps> = (props: any) => {
   return <StyledBox {...props} data-testid="box-comp" />;
